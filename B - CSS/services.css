@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    padding: 50px 0;
+    font-family: 'Segoe UI', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+
+.Phone {
+    font-size: 15px;
+    color: #999;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #222;
+}
+
+.logo {
+  display: flex;
+  align-items: center; 
+  margin-left: 40px;
+}
+
+.logo-icon {
+  height: 45px;
+  margin-right: 20px;
+}
+
+.logo h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+.services-hero {
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.services-hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.services-hero p {
+    color: #555;
+    font-size: 20px;
+}
+
+.services-grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    padding-bottom: 100px;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;    
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+.service-card p {
+    width: 80%;
+    margin: 10px auto;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .service-card img {
+        height: 300px;
+    }
+
+    .services-hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-card img {
+        height: 260px;
+    }
+
+    .services-hero h1 {
+        font-size: 35px;
+    }
+
+    .services-hero p {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #ddd;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Phone {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item.text {
+        padding: 50px 20px;
+    }
+
+    .item h3 {
+        font-size: 25px;
+    }
+
+    .item p {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .About-Hero h1 {
+        font-size: 35px;
+    }
+
+    .About-Hero p {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .quality h2 {
+        font-size: 40px;
+    }
+
+    #menu-toggle:checked ~ .nav ul {
+        display: flex;
+    }
+
+    #menu-toggle:checked ~ .nav {
+     display: block;
+}
+    
+}
+
+@media (max-width: 480px) {
+    .services-hero {
+        padding-top: 170px;
+    }
+
+    .service-card h3 {
+        font-size: 25px;
+    }
+
+    .service-card p {
+        width: 90%;
+        font-size: 15px;
+    }
+}
