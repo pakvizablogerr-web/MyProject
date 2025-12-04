@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 25px;
+}
+
+.header {
+    width: 100%;
+    padding: 50px 0;
+    font-family: 'Segoe UI', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 15px;
+}
+
+.Phone {
+    font-size: 15px;
+    color: #999;
+}
+
+.logo {
+  display: flex;
+  align-items: center; 
+  margin-left: 40px;
+}
+
+.logo-icon {
+  height: 44px;
+  margin-right: 20px;
+}
+
+.logo h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #222;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.About-Hero {
+    padding-top: 150px; 
+    text-align: center;
+    max-width: 870px;
+    margin: 0 auto 65px;
+}
+
+.About-Hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.About-Hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+.About-Image {
+    width: 100%;
+    display: grid;
+}
+
+.AboutGrid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 80%;
+}
+
+
+.process {
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.process-header h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.process-header p {
+    font-size: 18px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    width: 100%;
+}
+
+.item.text {
+    background: #dedede;
+    padding: 80px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.item p {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quality {
+    padding: 120px 0;
+    background: #f9fafa;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.quality h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.q-text {
+    max-width: 900px;         
+    margin: 40px auto;        
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+@media (max-width: 1200px) {
+
+    .process-header h2 {
+        font-size: 40px;
+    }
+
+    .item.text {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .nav ul {
+        gap: 20px;
+    }
+
+    .process-header h2 {
+        font-size: 38px;
+    }
+
+    .About-Hero h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px 0;
+        display: none;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
+
+    #menu-toggle:checked ~ .nav {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Phone {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item.text {
+        padding: 50px 20px;
+    }
+
+    .item h3 {
+        font-size: 24px;
+    }
+
+    .item p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .About-Hero h1 {
+        font-size: 34px;
+    }
+
+    .About-Hero p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .quality h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .item.text {
+        padding: 40px 15px;
+    }
+
+    .item h3 {
+        font-size: 22px;
+    }
+
+    .item p {
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .About-Hero h1 {
+        font-size: 30px;
+    }
+
+    .quality h2 {
+        font-size: 32px;
+    }
+
+    .q-text {
+        font-size: 16px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .item.text {
+        padding: 30px 10px;
+    }
+
+    .About-Hero h1 {
+        font-size: 26px;
+    }
+
+    .quality h2 {
+        font-size: 28px;
+    }
+
+    .q-text {
+        font-size: 15px;
+    }
+}
