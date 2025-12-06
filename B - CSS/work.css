@@ -140,7 +140,6 @@ body {
         font-size: 35px;
     }
 
-    @media (max-width: 900px) {
     .container {
         display: flex;
         justify-content: space-between; 
@@ -152,7 +151,6 @@ body {
     }
 }
 
-}
 @media (max-width: 600px) {
 
     body {
