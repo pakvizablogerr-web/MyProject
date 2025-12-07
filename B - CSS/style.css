@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
-body{
-  padding: 0px 80px;
+.wrapper {
+  padding: 0 80px;
 }
 
+body {
+    padding-top: 120px; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Header/Container */
 .header {
@@ -18,7 +27,7 @@ body{
   background-color: white;
   left: 0;
   top: 0;
-
+  z-index: 9999;
 }
 
 .container {
@@ -197,52 +206,95 @@ p{
   padding: 15px 0;
 }
 
-.OurServices {
-  width: 100%;
-  text-align: center;
+.services-section {
+  
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.h2Service h2 {
-  font-size: 30px;
-  font-family: sans-serif;
+.services-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    color: #111;
 }
 
-.Photos {
+.services-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-card {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.service-label {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+
+.ServiceCard {
+  max-width: 350px;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 90px 0;
-}
-
-.ServiceItem {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.ServiceItem img {
-  width: 350px;
-  height: auto;
+.ServiceCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.ServiceItem h4 {
-  font-size: 20px;
-  color: #333;
-}
+.ServiceCard h4 {
+  position: absolute;
+  font-size: 22px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+
+} 
 
 .testimonials {
   text-align: center;
-  padding: 80px 0;
   background: #fff; 
+  padding-top: 150px;
 }
 
 .testimonials h2 {
   font-size: 48px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+  margin-top: 80px;
 }
 
 .testimonial-konteineri {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 60px;
 }
@@ -273,14 +325,12 @@ p{
 }
 
 .Contact {
-    background: #0f0f0f;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 80px; 
-    width: 100vw;          
-    margin-left: -80px; 
-    padding: 100px 80px;   
-
+  width: 100%;
+  padding: 100px 80px;
+  background: #0f0f0f;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 80px;
 }
 
 .contact-container {
@@ -300,7 +350,7 @@ p{
 }
 
 .contact-left p {
-    margin: 12px 0 20px;
+    margin: 10px 0 20px;
     color: #bbbbbb;
     font-size: 16px;
 }
@@ -354,29 +404,24 @@ p{
     padding: 15px;
     background: white;
     border: none;
-    font-size: 16px;
-}
-
-
-@media (max-width: 1200px) {
-  body {
-    padding: 0 40px;
-  }
-
-  .Hero h1 {
-    font-size: 60px;
-    max-width: 700px;
-  }
+    font-size: 15px;
 }
 
 @media (max-width: 990px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+
+  .Contact {
+    padding: 80px 30px;
+  }
 
   .Hero {
     padding: 200px 30px;
   }
 
   .Hero h1 {
-    font-size: 48px;
+    font-size: 50px;
     width: 100%;
   }
 
@@ -400,117 +445,65 @@ p{
     width: 100%;
   }
 
-  
   .Photos {
     flex-direction: column;
     padding: 40px 0;
   }
 
-  .Photos img {
-    width: 100%;
+  .ServiceItem img {
     max-width: 500px;
   }
 
-  .Warwerebi {
+  
+  .services-container {
+    flex-direction: column;
     gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    align-items: center;
   }
 
-  .Warwerebi h4 {
-    margin-top: 0;
-    color: black;
+  .service-card img {
+    height: 350px;
+  }
+
+  .services-title {
+    font-size: 32px;
+    margin-bottom: 50px;
   }
 
   .testimonial-konteineri {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 
-  /* კონტაქტების სექცია */
   .contact-container {
     grid-template-columns: 1fr;
     gap: 40px;
-    width: 100%;
   }
 
   .Contact {
-    width: 100vw;
-    margin-left: -40px;
-    padding: 80px 40px;
-  }
-
-  .form-row {
-    grid-template-columns: 1fr;
+    width: 100%;
+    margin-left: 0;
+    padding: 80px 30px;
   }
 
   .contact-left h2 {
-    font-size: 38px;
+    font-size: 36px;
   }
 }
 
-@media (max-width: 600px) {
-
+@media (max-width: 768px) {
   body {
     padding: 0 20px;
   }
 
   .header {
-    padding: 18px 0;
+    padding: 20px 0;
   }
 
   .logo {
     margin-left: 0;
   }
-
-  .nav ul {
-    gap: 15px;
-  }
-
-  .Hero {
-    padding: 150px 20px;
-  }
-
-  .Hero h1 {
-    font-size: 38px;
-  }
-
-  .Text-h2 {
-    font-size: 32px;
-  }
-
-  .H2Us {
-    font-size: 36px;
-  }
-
-  .h2Service h2 {
-    font-size: 28px;
-  }
-
-  .Photos img {
-    max-width: 90%;
-  }
-
-  .testimonial-konteineri {
-    padding: 0 20px;
-  }
-
-  .Contact {
-    width: 100vw;
-    margin-left: -20px;
-    padding: 60px 20px;
-  }
-
-  .contact-left h2 {
-    font-size: 32px;
-  }
-
-  .contact-form button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
 
   .burger {
     display: flex;
@@ -527,89 +520,108 @@ p{
     gap: 20px;
     display: none;
     text-align: center;
-    border-top: 1px solid #ddd;
+  
   }
 
   #menu-toggle:checked ~ .nav ul {
     display: flex;
   }
-}
-
-
-@media (max-width: 768px) {
 
   .Hero {
     padding: 140px 20px;
   }
 
   .Hero h1 {
-    font-size: 34px;
-    width: 100%;
+    font-size: 36px;
   }
 
-  .Hero-1 {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 0;
+  .Text-h2 {
+    font-size: 30px;
   }
 
-  .Text {
-    width: 100%;
-  }
-
-  .features {
+  
+  .services-container {
     flex-direction: column;
     gap: 30px;
-    padding: 40px 20px;
   }
 
-  .feature {
+  .service-card img {
+    height: 300px;
+  }
+
+  .service-label {
+    font-size: 22px;
+  }
+
+  .services-title {
+    font-size: 28px;
+  }
+
+  .H2Us,
+  .h2Service h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-konteineri {
+    padding: 0 20px;
+  }
+
+  .contact-left h2 {
+    font-size: 30px;
+  }
+
+  .contact-form button {
     width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  .Hero h1 {
+    font-size: 26px;
+  }
+
+  .Text-h2 {
+    font-size: 24px;
+  }
+
+  .contact-left h2 {
+    font-size: 24px;
+  }
+
+    .service-card img {
+    height: 250px;
+  }
+
+  .service-label {
+    font-size: 18px;
+  }
+
+  .services-title {
+    font-size: 24px;
+  }
+
+  .testimonial {
+    width: 100%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
   .Photos {
-    flex-direction: column;
-    padding: 40px 0;
+    gap: 20px;
   }
 
   .ServiceItem img {
     width: 100%;
-    max-width: 350px;
   }
 
-  .testimonial-konteineri {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .contact-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
   }
 }
-
-
-@media (max-width: 320px) {
-
-  body::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: black;
-    margin-top: 20px;
-  }
-
-  .Hero h1 {
-    font-size: 28px;
-  }
-
-  .Text-h2 {
-    font-size: 26px;
-  }
-
-  .contact-left h2 {
-    font-size: 26px;
-  }
-}
-
