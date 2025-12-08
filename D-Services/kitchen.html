@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchens</title>
+    <link rel="stylesheet" href="../D-Services/kitchen.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="../C Images/img/logo.svg" class="logo-icon">
+            <h2>M&B Remodeling</h2>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../A-Htmls/about.html">About</a></li>
+                <li><a href="../A-Htmls/services.html">Services</a></li>
+                <li><a href="../A-Htmls/work.html">Work</a></li>
+                <li><a href="../A-Htmls/contact.html">Contact</a></li>
+                <span class="Phone">123-456-7890</span>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="kitchen-hero">
+    <h1>Kitchens</h1>
+    <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+</section>
+
+<section class="kitchen-gallery">
+
+    <picture data-bs-slide-to="0" data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-target="#kitchenCarousel">
+  <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg/v1/fill/w_253,h_253,q_90,enc_avif,quality_auto/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg 1x,
+      https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg/v1/fill/w_506,h_506,q_90,enc_avif,quality_auto/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg 2x,
+      https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg/v1/fill/w_759,h_759,q_90,enc_avif,quality_auto/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg 3x,
+      https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg/v1/fill/w_1012,h_1012,q_90,enc_avif,quality_auto/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg 4x,
+      https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg/v1/fill/w_1265,h_1265,q_90,enc_avif,quality_auto/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg 5x"
+    type="image/jpeg">
+  <img src="https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg" 
+       alt="Kitchen image">
+</picture>
+
+<picture data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-slide-to="1">
+   <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg/v1/fill/w_254,h_253,q_90,enc_avif,quality_auto/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg 1x,
+      https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg/v1/fill/w_508,h_506,q_90,enc_avif,quality_auto/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg 2x,
+      https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg/v1/fill/w_762,h_759,q_90,enc_avif,quality_auto/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg 3x,
+      https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg/v1/fill/w_1016,h_1012,q_90,enc_avif,quality_auto/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg 4x,
+      https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg/v1/fill/w_1270,h_1265,q_90,enc_avif,quality_auto/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg 5x"
+    type="image/jpeg">
+  <img 
+    src="https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg">
+</picture>
+
+<picture data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-slide-to="2">
+  <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg/v1/fill/w_253,h_253,q_90,enc_avif,quality_auto/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg 1x,
+      https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg/v1/fill/w_506,h_506,q_90,enc_avif,quality_auto/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg 2x,
+      https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg/v1/fill/w_759,h_759,q_90,enc_avif,quality_auto/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg 3x,
+      https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg/v1/fill/w_1012,h_1012,q_90,enc_avif,quality_auto/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg 4x,
+      https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg/v1/fill/w_1265,h_1265,q_90,enc_avif,quality_auto/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg 5x"
+    type="image/jpeg">
+  <img 
+    src="https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg">
+</picture>
+
+<picture data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-slide-to="3">
+  <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_253,h_253,q_90,enc_avif,quality_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg 1x,
+      https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_506,h_506,q_90,enc_avif,quality_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg 2x,
+      https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_759,h_759,q_90,enc_avif,quality_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg 3x,
+      https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_1012,h_1012,q_90,enc_avif,quality_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg 4x,
+      https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_1265,h_1265,q_90,enc_avif,quality_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg 5x"
+    type="image/jpeg">
+  <img 
+    src="https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg">
+</picture>
+
+<picture data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-slide-to="4">
+  <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg/v1/fill/w_254,h_253,q_90,enc_avif,quality_auto/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg 1x,
+      https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg/v1/fill/w_508,h_506,q_90,enc_avif,quality_auto/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg 2x,
+      https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg/v1/fill/w_762,h_759,q_90,enc_avif,quality_auto/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg 3x,
+      https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg/v1/fill/w_1016,h_1012,q_90,enc_avif,quality_auto/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg 4x,
+      https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg/v1/fill/w_1270,h_1265,q_90,enc_avif,quality_auto/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg 5x
+    "
+    type="image/jpeg">
+  <img 
+    src="https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg">
+</picture>
+
+<picture data-bs-toggle="modal" data-bs-target="#kitchenModal" data-bs-slide-to="5">
+  <source 
+    srcset="
+      https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg/v1/fill/w_253,h_253,q_90,enc_avif,quality_auto/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg 1x,
+      https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg/v1/fill/w_506,h_506,q_90,enc_avif,quality_auto/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg 2x,
+      https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg/v1/fill/w_759,h_759,q_90,enc_avif,quality_auto/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg 3x,
+      https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg/v1/fill/w_1012,h_1012,q_90,enc_avif,quality_auto/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg 4x,
+      https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg/v1/fill/w_1265,h_1265,q_90,enc_avif,quality_auto/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg 5x"
+    type="image/jpeg">
+  <img 
+    src="https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg">
+</picture>
+</section>
+
+<div class="modal fade" id="kitchenModal" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body p-0">
+
+        <div id="kitchenCarousel" class="carousel slide" data-bs-ride="false">
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="https://static.wixstatic.com/media/84770f_4b0952848fe9402f8b117edf9d2d7359~mv2.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/84770f_12729c3c249c4d24970a2a8d75750b6e~mv2.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/84770f_297fd9698d5d40b78c57f030998c73e3~mv2.jpeg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/84770f_37b8eb07cc0f47658f82ae259e147a9a~mv2.jpeg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+              <img src="https://static.wixstatic.com/media/84770f_e4961873cf6649019774116c0807bedf~mv2.jpg" class="d-block w-100">
+            </div>
+
+          </div>
+
+          <!-- carousel open buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#kitchenCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#kitchenCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- close button -->
+      <button class="btn-close position-absolute end-0 m-3" data-bs-dismiss="modal"></button>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,8 @@
 
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
     background: #f9fafa;
     color: #222;
     padding-top: 120px; 

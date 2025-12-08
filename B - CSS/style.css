@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../Fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+  font-weight: 400;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +29,7 @@ img {
 .header {
   width: 100%;
   padding: 50px 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:  'OpenSans';
   position: fixed;
   background-color: white;
   left: 0;
@@ -115,19 +122,40 @@ img {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  padding: 250px 50px;
+  padding: 140px 50px;
 
 }
 
 .Hero h1 {
   font-size: 72px;
   width: 900px;
-  gap: 5px;
-  color: whitesmoke;
-  font-family: Arial, sans-serif;
+  gap: 10px;
+  color: aliceblue;
+  font-family: 'OpenSans';
   max-width: 900px;
   width: 100%;
  
+}
+
+.Hero-content {
+  max-width: 900px;
+}
+
+.Hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: white;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.Hero-btn:hover {
+  background: #f4f4f4;
+  transform: translateY(-3px);
 }
 
 .Hero-1{
@@ -169,6 +197,24 @@ p{
   font-size: 20px;
 }
 
+.About-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 13px 40px;
+  background: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.About-btn:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+
 .why-choose-us {
   text-align: center;
   padding: 70px 0;
@@ -203,11 +249,10 @@ p{
 }
 
 .features p{
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .services-section {
-  
     width: 100%;
     background: white;
     text-align: center;
@@ -217,7 +262,7 @@ p{
 .services-title {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     color: #111;
 }
 
@@ -244,7 +289,7 @@ p{
 
 .service-label {
     position: absolute;
-    bottom: 20px;
+    bottom: 370px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 26px;
@@ -277,8 +322,25 @@ p{
   text-align: center;
   top: 50%;
   left: 50%;
-
 } 
+
+.services-btn {
+    display: inline-block;
+    margin-top:70px;
+    padding: 13px 40px;
+    background: #111;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.services-btn:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
 
 .testimonials {
   text-align: center;

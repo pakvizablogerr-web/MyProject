@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +11,7 @@
 
 
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins';
     background: #f9fafa;
     color: #222;
     padding-top: 120px; 
@@ -187,6 +192,28 @@ textarea {
     .burger {
         margin-left: auto;
     }
+    .burger {
+        display: flex;
+    }
+
+    .nav ul {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        width: 250px;        
+        background: white;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 25px; 
+        display: none;
+        border-left: 1px solid #eee;
+        text-align: left;    
+        align-items: flex-start; 
+    }
+
+    #menu-toggle:checked ~ nav ul {
+        display: flex;
+    }
 }
 
 @media (max-width: 600px) {
@@ -212,28 +239,3 @@ textarea {
     }
 }
 
-@media (max-width: 900px) {
-
-    .burger {
-        display: flex;
-    }
-
-    .nav ul {
-        position: absolute;
-        top: 90px;
-        right: 0;
-        width: 250px;        
-        background: white;
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 25px; 
-        display: none;
-        border-left: 1px solid #eee;
-        text-align: left;    
-        align-items: flex-start; 
-    }
-
-    #menu-toggle:checked ~ nav ul {
-        display: flex;
-    }
-}

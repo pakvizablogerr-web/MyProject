@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Fonts/Poppins-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +12,7 @@
 .header {
     width: 100%;
     padding: 50px 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins';
     position: fixed;
     top: 0;
     left: 0;
@@ -102,7 +107,16 @@
 }
 
 .service-card {
+    text-decoration: none;
     text-align: center;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-3px);
 }
 
 .service-card img {
@@ -138,26 +152,6 @@
         font-size: 40px;
     }
 }
-
-@media (max-width: 768px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .service-card img {
-        height: 260px;
-    }
-
-    .services-hero h1 {
-        font-size: 35px;
-    }
-
-    .services-hero p {
-        font-size: 15px;
-    }
-}
-
 
 @media (max-width: 768px) {
 
